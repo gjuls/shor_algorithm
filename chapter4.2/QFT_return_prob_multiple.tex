@@ -1,0 +1,14 @@
+\documentclass[border=2px]{standalone}
+
+\usepackage[braket, qm]{qcircuit}
+\usepackage{graphicx}
+
+\begin{document}
+\scalebox{1.0}{
+\Qcircuit @C=1.0em @R=0.2em @!R { \\
+	 	\nghost{{r1}_{0} :  } & \lstick{{r1}_{0} :  } & \gate{\mathrm{X}} & \ctrl{3} & \qw & \qw & \qw & \gate{\mathrm{Z}} & \qw & \qw & \qw & \qw & \qw & \qw & \qw & \qw & \ctrl{2} & \qw & \qw & \qw & \gate{\mathrm{Z}} & \qw & \qw & \qw & \qw & \qw & \qw & \qw & \ctrl{2} & \qw & \qw & \qw & \qw & \qw & \qw & \qw & \qw & \qw & \qw & \qw & \qw & \ctrl{3} & \qw & \qw & \qw & \qw & \qw & \qw\\
+	 	\nghost{{r1}_{1} :  } & \lstick{{r1}_{1} :  } & \qw & \qw & \qw & \qw & \qw & \ctrl{2} & \qw & \qw & \qw & \qw & \qw & \qw & \qw & \qw & \qw & \dstick{\hspace{2.0em}\mathrm{P}\,(\mathrm{\frac{\pi}{4}})} \qw & \qw & \qw & \ctrl{1} & \dstick{\hspace{2.0em}\mathrm{P}\,(\mathrm{\frac{\pi}{2}})} \qw & \qw & \qw & \ctrl{1} & \dstick{\hspace{2.0em}\mathrm{P}\,(\mathrm{\frac{-\pi}{2}})} \qw & \qw & \qw & \qw & \dstick{\hspace{2.0em}\mathrm{P}\,(\mathrm{\frac{-\pi}{4}})} \qw & \qw & \qw & \qw & \qw & \qw & \qw & \qw & \ctrl{2} & \qw & \qw & \qw & \qw & \qw & \qw & \qw & \qw & \qw & \qw\\
+	 	\nghost{{r1}_{2} :  } & \lstick{{r1}_{2} :  } & \qw & \qw & \dstick{\hspace{2.0em}\mathrm{P}\,(\mathrm{\frac{\pi}{8}})} \qw & \qw & \qw & \qw & \dstick{\hspace{2.0em}\mathrm{P}\,(\mathrm{\frac{\pi}{4}})} \qw & \qw & \qw & \ctrl{1} & \dstick{\hspace{2.0em}\mathrm{P}\,(\mathrm{\frac{\pi}{2}})} \qw & \qw & \qw & \gate{\mathrm{H}} & \control \qw & \qw & \qw & \qw & \control \qw & \qw & \qw & \qw & \control \qw & \qw & \qw & \qw & \control \qw & \qw & \qw & \qw & \gate{\mathrm{H}} & \ctrl{1} & \dstick{\hspace{2.0em}\mathrm{P}\,(\mathrm{\frac{-\pi}{2}})} \qw & \qw & \qw & \qw & \dstick{\hspace{2.0em}\mathrm{P}\,(\mathrm{\frac{-\pi}{4}})} \qw & \qw & \qw & \qw & \dstick{\hspace{2.0em}\mathrm{P}\,(\mathrm{\frac{-\pi}{8}})} \qw & \qw & \qw & \qw & \qw & \qw\\
+	 	\nghost{{r1}_{3} :  } & \lstick{{r1}_{3} :  } & \gate{\mathrm{H}} & \control \qw & \qw & \qw & \qw & \control \qw & \qw & \qw & \qw & \control \qw & \qw & \qw & \qw & \qw & \qw & \qw & \qw & \qw & \qw & \qw & \qw & \qw & \qw & \qw & \qw & \qw & \qw & \qw & \qw & \qw & \qw & \control \qw & \qw & \qw & \qw & \control \qw & \qw & \qw & \qw & \control \qw & \qw & \qw & \qw & \gate{\mathrm{H}} & \qw & \qw\\
+\\ }}
+\end{document}
